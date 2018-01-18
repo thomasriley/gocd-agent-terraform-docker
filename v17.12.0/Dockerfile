@@ -5,6 +5,7 @@ WORKDIR /
 COPY terraform-entrypoint.sh /terraform-entrypoint.sh
 
 ENV GIT_SSH_KEY ''
+ENV GIT_KNOWN_HOST ''
 
 RUN   apk update \ 
  &&   apk add ca-certificates wget \  
